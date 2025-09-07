@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (menuData) {
       const activeBtn = document.querySelector('.category.active');
       const activeSlug = activeBtn ? activeBtn.dataset.category : 'all';
-      renderCategories([{ slug: 'all', label: { en: 'All', ar: 'الكل' }, icon: 'images/elments.png' }, ...menuData.categories]);
+      renderCategories([{ slug: 'all', label: { en: 'All', ar: 'الكل' }, icon: 'images/menuu.png' }, ...menuData.categories]);
       setupFiltering();
       renderProductsForCategory(activeSlug);
       // sync lang buttons
@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded', function() {
         data = await res.json();
       }
       menuData = data;
-      const categories = [{ slug: 'all', label: { en: 'All', ar: 'الكل' }, icon: 'images/allicon.png' }, ...data.categories];
+      const categories = [{ slug: 'all', label: { en: 'All', ar: 'الكل' }, icon: 'images/menuu.png' }, ...data.categories];
       renderCategories(categories);
       setupRevealAnimations();
       setupFiltering();
