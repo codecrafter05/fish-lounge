@@ -4,46 +4,49 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   
-  <!-- Primary Meta Tags -->
-  <title>صوغة|  Sougha</title>
-  <meta name="title" content="صوغة - أفضل كوفي شوب في مجمع الأفنيوز البحرين | Sougha - Best Coffee Shop in Avenues Mall Bahrain" />
-  <meta name="description" content="استمتع بأفضل القهوة الإيطالية والحلويات الشعبية في صوغة - كوفي شوب مميز في مجمع الأفنيوز البحرين. إسبريسو، كابتشينو، لاتيه، حلويات إيطالية، قهوة عربية، مشروبات ساخنة وباردة. | Enjoy the best Italian coffee and traditional desserts at Sougha - a premium coffee shop in Avenues Mall Bahrain. Espresso, Cappuccino, Latte, Italian desserts, Arabic coffee, hot and cold beverages." />
-  <meta name="keywords" content="صوغة, كوفي شوب, قهوة, إسبريسو, كابتشينو, لاتيه, حلويات إيطالية, قهوة عربية, مجمع الأفنيوز, البحرين, المنامة, مشروبات ساخنة, مشروبات باردة, قهوة مثلجة, ساندويتش, كرواسون, تشيز كيك, Sougha, coffee shop, espresso, cappuccino, latte, Italian desserts, Arabic coffee, Avenues Mall, Bahrain, Manama, hot drinks, cold drinks, iced coffee, sandwich, croissant, cheesecake" />
-  <meta name="author" content="صوغة - كوفي شوب | Sougha Coffee Shop" />
-  <meta name="robots" content="index, follow" />
-  <meta name="language" content="Arabic, English" />
+<!-- Primary Meta Tags -->
+  <title>فيش لاونج | Fish Lounge </title>
+  <link rel="canonical" href="{{ url()->current() }}"/>
+  <meta name="title" content="فيش لاونج | Fish Lounge – أفضل المأكولات البحرية في مجمّع الأفنيوز البحرين">
+  <meta name="description" content="تذوّق أشهى المأكولات البحرية الطازجة في فيش لاونج – مجمّع الأفنيوز البحرين. أسماك مشوية، روبيان، سلطات بحرية، سوب بحري، وأطباق بلاتر مشاركة. أجواء عصرية مطلة على البحر. | Enjoy fresh seafood at Fish Lounge – Avenues Mall Bahrain: grilled fish, shrimp, seafood salads & soups, shared platters, and a modern seaside vibe.">
+  <meta name="keywords" content="فيش لاونج, مطعم بحري, مأكولات بحرية, أسماك, روبيان, سلطعون, بلاتر بحري, مجمّع الأفنيوز, الأفنيوز البحرين, المنامة, مطاعم البحرين, Fish Lounge, seafood restaurant, grilled fish, shrimp, crab, seafood platter, Avenues Mall Bahrain, Manama restaurants">
+  <meta name="author" content="Fish Lounge | فيش لاونج">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="Arabic, English">
   
   <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="restaurant.cafe" />
-  <meta property="og:url" content="{{ url()->current() }}" />
-  <meta property="og:title" content="صوغة - أفضل كوفي شوب في مجمع الأفنيوز البحرين | Sougha - Best Coffee Shop in Avenues Mall Bahrain" />
-  <meta property="og:description" content="استمتع بأفضل القهوة الإيطالية والحلويات الشعبية في صوغة - كوفي شوب مميز في مجمع الأفنيوز البحرين. إسبريسو، كابتشينو، لاتيه، حلويات إيطالية، قهوة عربية، مشروبات ساخنة وباردة. | Enjoy the best Italian coffee and traditional desserts at Sougha - a premium coffee shop in Avenues Mall Bahrain. Espresso, Cappuccino, Latte, Italian desserts, Arabic coffee, hot and cold beverages." />
-  <meta property="og:image" content="{{ asset('images/logo icon-01.png') }}" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:site_name" content="صوغة - كوفي شوب | Sougha Coffee Shop" />
-  <meta property="og:locale" content="ar_SA" />
+  <meta property="og:type" content="restaurant">
+  <meta property="og:url" content="{{ url()->current() }}">
+  <meta property="og:title" content="فيش لاونج | Fish Lounge – أفضل المأكولات البحرية في مجمّع الأفنيوز البحرين">
+  <meta property="og:description" content="مأكولات بحرية طازجة وأجواء عصرية مطلة على البحر في مجمّع الأفنيوز البحرين. أسماك مشوية، روبيان، بلاتر مشاركة والمزيد. | Fresh seafood & modern seaside vibes at Avenues Mall Bahrain.">
+  <meta property="og:image" content="{{ asset('images/fishlounge-og.jpg') }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Fish Lounge – طاولة مأكولات بحرية متنوعة">
+  <meta property="og:site_name" content="Fish Lounge | فيش لاونج">
+  <meta property="og:locale" content="ar_BH">
+  <meta property="og:locale:alternate" content="en_US">
   
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="{{ url()->current() }}" />
-  <meta property="twitter:title" content="صوغة - أفضل كوفي شوب في مجمع الأفنيوز البحرين | Sougha - Best Coffee Shop in Avenues Mall Bahrain" />
-  <meta property="twitter:description" content="استمتع بأفضل القهوة الإيطالية والحلويات الشعبية في صوغة - كوفي شوب مميز في مجمع الأفنيوز البحرين | Enjoy the best Italian coffee and traditional desserts at Sougha - a premium coffee shop in Avenues Mall Bahrain" />
-  <meta property="twitter:image" content="{{ asset('images/logo icon-01.png') }}" />
-  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="{{ url()->current() }}">
+  <meta name="twitter:title" content="فيش لاونج | Fish Lounge – أفضل المأكولات البحرية في مجمّع الأفنيوز البحرين">
+  <meta name="twitter:description" content="استمتع بمأكولات بحرية طازجة وأجواء عصرية مطلة على البحر في مجمّع الأفنيوز البحرين. | Fresh seafood & modern vibes at Avenues Mall Bahrain.">
+  <meta name="twitter:image" content="{{ asset('images/fishlounge-og.jpg') }}">
+
   <!-- Additional Meta Tags -->
-  <meta name="theme-color" content="#5e4636" />
-  <meta name="msapplication-TileColor" content="#5e4636" />
+  <meta name="theme-color" content="#b4cbdb" />
+  <meta name="msapplication-TileColor" content="#b4cbdb" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <meta name="apple-mobile-web-app-title" content="صوغة | Sougha" />
-  <meta name="application-name" content="صوغة - كوفي شوب | Sougha Coffee Shop" />
-  
+  <meta name="apple-mobile-web-app-title" content="فيش لاونج | Fish Lounge" />
+  <meta name="application-name" content="فيش لاونج | Fish Lounge" />
+
   <!-- Canonical URL -->
   <link rel="canonical" href="{{ url()->current() }}" />
   
   <!-- Favicon and Icons -->
-  <link rel="icon" type="image/png" href="{{ asset('images/logo icon-01.png') }}" />
+  <link rel="icon" type="image/png" href="{{ asset('images/logo2.png') }}" />
   <link rel="manifest" href="{{ asset('manifest.webmanifest') }}" />
   
   <!-- Preconnect for Performance -->
@@ -58,21 +61,21 @@
   <div class="loader" id="loader">
     <div class="loader-content">
       <div class="loader-logo">
-        <img src="{{ asset('images/logo icon-01.png') }}" alt="صوغة - كوفي شوب في مجمع الأفنيوز البحرين | Sougha Coffee Shop in Avenues Mall Bahrain" width="300" height="300" decoding="async">
+        <img src="{{ asset('images/logo2.png') }}" alt="فيش لاونج -  في مجمع الأفنيوز البحرين | Fish Lounge in Avenues Mall Bahrain" width="300" height="300" decoding="async">
       </div>
     </div>
   </div>
 
   <section class="hero-section" id="hero-section">
     <div class="hero-content">
-      <img src="{{ asset('images/Sougha.png') }}" alt="صوغة - أفضل كوفي شوب في مجمع الأفنيوز البحرين | Sougha - Best Coffee Shop in Avenues Mall Bahrain" class="hero-logo" width="600" height="600" decoding="async">
+      <img src="{{ asset('images/logo3.png') }}" alt="فيش لاونج - أفضل مطعم مأكولات بحرية في مجمع الأفنيوز البحرين | Fish Lounge - Best Seafood Restaurant in Avenues Mall Bahrain" class="hero-logo" width="600" height="600" decoding="async">
     </div>
   </section>
 
   <section class="menu-section" id="menu">
     <div class="container">
       <div class="menu-top">
-        <img src="{{ asset('images/1-04.png') }}" alt="صوغة - قائمة الطعام | Sougha - Food Menu" class="header-logo" width="200" height="100" loading="lazy" decoding="async">
+        <img src="{{ asset('images/logo1.png') }}" alt="فيش لاونج - قائمة الطعام | Fish Lounge - Food Menu" class="header-logo" width="200" height="100" loading="lazy" decoding="async">
         <div class="lang-switch" id="lang-switch" role="group" aria-label="تبديل اللغة | Language Switch">
           <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
           <button type="button" class="lang-btn" data-lang="ar" aria-pressed="false">AR</button>

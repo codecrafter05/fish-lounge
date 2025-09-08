@@ -1,4 +1,14 @@
 :root {
+  --coffee: #a2b6c5;
+  --creme: #ecf2f6;
+  --cramil: #b4cbdb;
+  --matcha: #f4ede8;
+  --coffee-dark: #3d2b1f;
+  --creme-light: #f4ede8;
+  --matcha-green: #D4F6FF;
+  --cramil-rust: #b8860b;
+}
+/* :root {
   --coffee: #5e4636;
   --creme: #f9f5f0;
   --cramil: #dabfa2;
@@ -7,8 +17,7 @@
   --creme-light: #f5f1eb;
   --matcha-green: #556b2f;
   --cramil-rust: #b8860b;
-}
-
+} */
 * {
   margin: 0;
   padding: 0;
@@ -350,8 +359,7 @@ body {
 /* Flip arrow content in RTL */
 html[dir="rtl"] .categories::before { content: '>'; }
 html[dir="rtl"] .categories::after { content: '<'; }
-
-.category {
+/* .category {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -376,9 +384,30 @@ html[dir="rtl"] .categories::after { content: '<'; }
   border: none;
   background-clip: padding-box;
   scroll-snap-align: center;
-}
+} */
+ /* .category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  text-align: center;
+  color: var(--coffee);
+  cursor: pointer;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  margin: 0.5rem 0;
+  width: auto;
+  height: auto;
+  appearance: none;
+  scroll-snap-align: center;
+  transition: transform .2s ease;
+  position: relative;   
+} */
 
-.category::before {
+/* .category::before {
   content: '';
   position: absolute;
   top: 0;
@@ -388,34 +417,34 @@ html[dir="rtl"] .categories::after { content: '<'; }
   background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.3) 50%, transparent 70%);
   opacity: 0;
   transition: opacity 0.3s ease;
-}
+} */
 
-.category:hover::before {
+/* .category:hover::before {
   opacity: 1;
-}
+} */
 
-.category:hover {
+/* .category:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   border-color: var(--cramil);
-}
+} */
 
-.category:active {
+/* .category:active {
   transform: scale(0.98);
-}
+} */
 
-.category.active {
+/* .category.active {
   color: white;
   transform: scale(1.1);
   background: linear-gradient(135deg, var(--cramil) 0%, var(--coffee) 100%);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-}
+} */
 
-.category.active::before {
+/* .category.active::before {
   opacity: 0.2;
-}
+} */
 
-.category img {
+/* .category img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -427,21 +456,120 @@ html[dir="rtl"] .categories::after { content: '<'; }
   transition: all 0.3s ease;
   z-index: 1;
   position: relative;
-}
+} */
 
-.category:focus-visible {
+/* .category:focus-visible {
   outline: 3px solid var(--cramil);
   outline-offset: 2px;
-}
+} */
 
-.category:hover img {
+/* .category:hover img {
   transform: scale(1.1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
+} */
 
-.category.active img {
+/* .category.active img {
   background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.1) 100%);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} */
+
+/* code above is the old category style, below is the new one */
+:root{
+  /* أكبر من قبل على الجوال */
+  --cat-img: clamp(120px, 34vw, 170px);
+}
+
+/* iPhone SE / شاشات ≤ 360px */
+@media (max-width: 360px){
+  :root{ --cat-img: clamp(112px, 38vw, 136px); }
+}
+
+/* iPhone 6/7/8/X/11 Pro (≈ 375px) */
+@media (min-width: 361px) and (max-width: 389px){
+  :root{ --cat-img: clamp(120px, 36vw, 148px); }
+}
+
+/* iPhone 12/13/14/15 (≈ 390px) */
+@media (min-width: 390px) and (max-width: 413px){
+  :root{ --cat-img: clamp(128px, 34vw, 156px); }
+}
+
+/* iPhone Plus & 14/15 Plus (414–428px) */
+@media (min-width: 414px) and (max-width: 428px){
+  :root{ --cat-img: clamp(136px, 32vw, 164px); }
+}
+
+/* iPhone Pro Max (≈ 430px) */
+@media (min-width: 429px) and (max-width: 430px){
+  :root{ --cat-img: clamp(140px, 30vw, 170px); }
+}
+
+/* تابلت */
+@media (min-width: 600px){
+  :root{ --cat-img: clamp(100px, 22vw, 150px); }
+}
+
+/* لابتوب وما فوق */
+@media (min-width: 1024px){
+  :root{ --cat-img: clamp(96px, 12vw, 130px); }
+}
+
+/* العنصر العام – بدون بوكس */
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  text-align: center;
+  color: var(--coffee);
+  cursor: pointer;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  margin: 0.5rem 0;
+  width: auto;
+  height: auto;
+  appearance: none;
+  scroll-snap-align: center;
+  position: relative;
+  transition: transform .2s ease;
+}
+
+/* ألغينا أي مؤثر يغطي كل العنصر */
+.category::before { display: none; }
+
+/* لا نبي ظل/بوكس على العنصر نفسه */
+.category:hover,
+.category.active {
+  box-shadow: none;
+  background: transparent;
+  border-color: transparent;
+  transform: none; /* التكبير بيصير على الصورة فقط */
+}
+
+/* الصورة — دائرة بدون خلفية أو حشوة */
+.category img{
+  width:var(--cat-img);
+  height:var(--cat-img);
+  border-radius:50%;
+  object-fit:cover;       /* تملأ الدائرة بدون فراغات */
+  background:transparent; /* شلنا الأبيض */
+  padding:0;              /* شلنا الحلقة البيضاء */
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,.12)); /* ظل خفيف (اختياري) */
+  transition:transform .25s ease, filter .25s ease, outline-color .2s ease;
+  position:relative; z-index:1; margin-bottom:.4rem;
+}
+
+.category:hover img{ transform: scale(1.06); filter: drop-shadow(0 6px 18px rgba(0,0,0,.18)); }
+.category:focus-visible img{ outline: 3px solid var(--cramil); outline-offset: 4px; }
+
+/* فوكس/مفعّل: حلقة خارجية فقط بدون خلفية */
+.category:focus-visible img,
+.category.active img{
+  outline:3px solid var(--cramil);
+  outline-offset:4px;
 }
 
 /* Product Grid */
